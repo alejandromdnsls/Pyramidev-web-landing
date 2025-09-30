@@ -42,10 +42,25 @@
   margin-bottom: var(--sp-3);
 }
 
+[data-theme="dark"] .section-header__title {
+  color: var(--c-text);
+}
+
 .section-header__description {
   font-size: var(--ts-lg);
   color: var(--c-text);
   line-height: var(--lh-relaxed);
+}
+
+/* Títulos y descripciones blancas para secciones con banners oscuros */
+#faq .section-header__title,
+#proceso .section-header__title {
+  color: #FFFFFF;
+}
+
+#faq .section-header__description,
+#proceso .section-header__description {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* Sección con fondo */

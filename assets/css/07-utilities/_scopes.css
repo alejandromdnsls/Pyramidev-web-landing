@@ -11,9 +11,7 @@
 }
 
 /* Scope about */
-.scope-about .hero {
-  padding-block: var(--sp-5);
-}
+/* Hero styles moved to global hero component */
 
 /* Scope services */
 .scope-services .card {
@@ -24,9 +22,7 @@
 /* El grid ya está definido en layout.css como repeat(3, 1fr) */
 
 /* Scope contact */
-.scope-contact .hero {
-  padding-block: var(--sp-4);
-}
+/* Hero styles moved to global hero component */
 
 .scope-contact .form {
   max-width: 600px;

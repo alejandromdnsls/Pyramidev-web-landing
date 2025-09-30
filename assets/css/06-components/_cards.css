@@ -43,6 +43,10 @@
   margin-bottom: var(--sp-2);
 }
 
+[data-theme="dark"] .card__title {
+  color: var(--c-text);
+}
+
 .card__description {
   color: var(--c-text);
   font-size: var(--ts-sm);
@@ -117,6 +121,10 @@
   font-weight: var(--fw-medium);
 }
 
+[data-theme="dark"] .card__tag {
+  color: var(--c-text);
+}
+
 /* Card de testimonio */
 .card--testimonial {
   position: relative;
@@ -153,6 +161,10 @@
   font-weight: var(--fw-semibold);
   color: var(--c-primary);
   font-size: var(--ts-base);
+}
+
+[data-theme="dark"] .card__author-name {
+  color: var(--c-text);
 }
 
 .card__author-role {

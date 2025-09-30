@@ -46,6 +46,10 @@
   margin: 0;
 }
 
+[data-theme="dark"] .accordion__title {
+  color: var(--c-text);
+}
+
 .accordion__icon {
   width: 24px;
   height: 24px;
