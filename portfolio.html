@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portafolio de Pyramidev - Casos de éxito en desarrollo de software, cloud y DevOps.">
+  <title>Portafolio - Pyramidev</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="scope-portfolio">
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <img src="/assets/img/logo.svg" alt="Pyramidev" class="navbar__logo-image" width="40" height="40">
+        <span>Pyramidev</span>
+      </a>
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="navbar-menu" aria-label="Abrir menú">
+        <span class="navbar__toggle-icon"><span></span><span></span><span></span></span>
+      </button>
+      <div class="navbar__nav" id="navbar-menu" aria-hidden="true">
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link">Inicio</a></li>
+          <li><a href="services.html" class="navbar__link">Servicios</a></li>
+          <li><a href="portfolio.html" class="navbar__link">Portafolio</a></li>
+          <li><a href="about.html" class="navbar__link">Nosotros</a></li>
+          <li><a href="contact.html" class="navbar__link">Contacto</a></li>
+        </ul>
+        <div class="navbar__cta">
+          <a href="contact.html" class="btn btn--cta">Cotiza tu proyecto</a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar__overlay" aria-hidden="true"></div>
+  </nav>
+
+  <section class="hero hero--compact">
+    <div class="hero__container o-container">
+      <div class="hero__content">
+        <p class="hero__overline">Portafolio</p>
+        <h1 class="hero__title">Proyectos que transforman negocios</h1>
+        <p class="hero__description">
+          Explora algunos de nuestros casos de éxito en diversos sectores e industrias.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section">
+    <div class="o-container">
+      <!-- Filtros -->
+      <div class="o-flex o-flex--center u-mb-5" style="flex-wrap: wrap;">
+        <button class="btn btn--primary" data-filter="all">Todos</button>
+        <button class="btn btn--outline" data-filter="web">Web Apps</button>
+        <button class="btn btn--outline" data-filter="mobile">Mobile</button>
+        <button class="btn btn--outline" data-filter="cloud">Cloud</button>
+        <button class="btn btn--outline" data-filter="design">Design</button>
+      </div>
+
+      <!-- Grid de proyectos -->
+      <div class="o-grid o-grid--3">
+        <article class="card card--portfolio" data-category="web" data-modal-open="modal-proyecto-1">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-1.jpg" alt="Proyecto SaaS FinTech" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Plataforma SaaS FinTech</h3>
+            <p class="card__description">Sistema de pagos y facturación para empresas B2B con integración a bancos.</p>
+            <div class="card__tags">
+              <span class="card__tag">React</span>
+              <span class="card__tag">Node.js</span>
+              <span class="card__tag">AWS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--portfolio" data-category="mobile" data-modal-open="modal-proyecto-2">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-2.jpg" alt="App Móvil E-commerce" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">App Móvil E-commerce</h3>
+            <p class="card__description">Aplicación nativa iOS/Android con 100K+ descargas y carrito social.</p>
+            <div class="card__tags">
+              <span class="card__tag">React Native</span>
+              <span class="card__tag">Firebase</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--portfolio" data-category="cloud" data-modal-open="modal-proyecto-3">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-3.jpg" alt="Migración Cloud AWS" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Migración Cloud Enterprise</h3>
+            <p class="card__description">Migración de infraestructura on-premise a AWS con reducción de costos del 40%.
+            </p>
+            <div class="card__tags">
+              <span class="card__tag">AWS</span>
+              <span class="card__tag">Kubernetes</span>
+              <span class="card__tag">Terraform</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--portfolio" data-category="design" data-modal-open="modal-proyecto-4">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-4.jpg" alt="Rediseño UX Dashboard" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Rediseño Dashboard Analytics</h3>
+            <p class="card__description">Renovación completa de UX/UI aumentando engagement en 65%.</p>
+            <div class="card__tags">
+              <span class="card__tag">Figma</span>
+              <span class="card__tag">Design System</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--portfolio" data-category="web" data-modal-open="modal-proyecto-5">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-5.jpg" alt="Marketplace B2B" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Marketplace B2B</h3>
+            <p class="card__description">Plataforma de compras corporativas con gestión de proveedores y licitaciones.
+            </p>
+            <div class="card__tags">
+              <span class="card__tag">Vue.js</span>
+              <span class="card__tag">Python</span>
+              <span class="card__tag">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--portfolio" data-category="cloud" data-modal-open="modal-proyecto-6">
+          <div class="card__image">
+            <img src="/assets/img/portfolio/project-6.jpg" alt="DevOps Pipeline" width="400" height="300"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">CI/CD Pipeline Automatizado</h3>
+            <p class="card__description">Implementación de DevOps reduciendo tiempo de deploy de 2h a 10min.</p>
+            <div class="card__tags">
+              <span class="card__tag">GitLab CI</span>
+              <span class="card__tag">Docker</span>
+              <span class="card__tag">GCP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales (ejemplo de uno) -->
+  <div id="modal-proyecto-1" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1"
+    aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__content">
+      <header class="modal__header">
+        <h2 id="modal-title-1" class="modal__title">Plataforma SaaS FinTech</h2>
+        <button class="modal__close" data-modal-close aria-label="Cerrar modal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg>
+        </button>
+      </header>
+      <div class="modal__body">
+        <img src="/assets/img/portfolio/project-1.jpg" alt="Plataforma SaaS FinTech" class="modal__image" width="800"
+          height="450">
+        <p class="modal__description">
+          Desarrollamos una plataforma SaaS completa para gestión de pagos B2B con integración directa a APIs bancarias.
+          El sistema procesa +$10M USD mensuales y atiende a 500+ empresas en LATAM.
+        </p>
+        <div class="modal__meta">
+          <div class="modal__meta-item">
+            <p class="modal__meta-label">Cliente</p>
+            <p class="modal__meta-value">FinTech LATAM</p>
+          </div>
+          <div class="modal__meta-item">
+            <p class="modal__meta-label">Industria</p>
+            <p class="modal__meta-value">Finanzas</p>
+          </div>
+          <div class="modal__meta-item">
+            <p class="modal__meta-label">Año</p>
+            <p class="modal__meta-value">2024</p>
+          </div>
+          <div class="modal__meta-item">
+            <p class="modal__meta-label">Duración</p>
+            <p class="modal__meta-value">6 meses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="o-section">
+    <div class="o-container">
+      <div class="cta-section">
+        <h2 class="cta-section__title">¿Tu proyecto será el siguiente?</h2>
+        <p class="cta-section__description">Cuéntanos tu idea y construyamos algo increíble juntos.</p>
+        <div class="cta-section__actions">
+          <a href="contact.html" class="btn btn--cta btn--lg"
+            style="background-color: var(--c-contrast); color: var(--c-secondary);">Iniciar proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <img src="/assets/img/logo.svg" alt="Pyramidev" class="footer__logo-image" width="40" height="40">
+            <span>Pyramidev</span>
+          </a>
+          <p class="footer__tagline">
+            Transformamos ideas en productos digitales escalables con tecnología de vanguardia.
+          </p>
+          <div class="footer__social">
+            <a href="https://linkedin.com/company/pyramidev" class="footer__social-link" aria-label="LinkedIn"
+              target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+            </a>
+            <a href="https://facebook.com/pyramidev" class="footer__social-link" aria-label="Facebook" target="_blank"
+              rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__section-title">Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#desarrollo" class="footer__link">Desarrollo a Medida</a></li>
+            <li><a href="services.html#cloud" class="footer__link">Cloud & DevOps</a></li>
+            <li><a href="services.html#integraciones" class="footer__link">Integraciones</a></li>
+            <li><a href="services.html#design" class="footer__link">UX/UI Design</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__section-title">Empresa</h4>
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">Nosotros</a></li>
+            <li><a href="portfolio.html" class="footer__link">Portafolio</a></li>
+            <li><a href="contact.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__section-title">Contacto</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link" style="pointer-events: none;">hola@pyramidev.com.mx</span></li>
+            <li><span class="footer__link" style="pointer-events: none;">+52 (55) 2190 2339</span></li>
+            <li><span class="footer__link" style="pointer-events: none;">Ciudad de México, México</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Pyramidev. Todos los derechos reservados.</p>
+        <nav class="footer__legal" aria-label="Enlaces legales">
+          <a href="privacy.html" class="footer__legal-link">Privacidad</a>
+          <a href="terms.html" class="footer__legal-link">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+
+</html>

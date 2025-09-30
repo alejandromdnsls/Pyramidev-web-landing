@@ -1,0 +1,119 @@
+/**
+ * 06-components/_hero.css
+ * Componente Hero (banner principal con gradiente)
+ */
+
+.hero {
+  position: relative;
+  padding-block: var(--sp-6);
+  background: linear-gradient(135deg, rgba(0, 179, 250, 0.08) 0%, rgba(0, 202, 255, 0.12) 100%);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-block: var(--sp-7);
+  }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20%;
+  width: 60%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 202, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--sp-5);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-6);
+  }
+}
+
+.hero__content {
+  text-align: left;
+}
+
+.hero__overline {
+  font-size: var(--ts-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--c-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--sp-2);
+}
+
+.hero__title {
+  font-size: var(--ts-hero);
+  font-weight: var(--fw-bold);
+  color: var(--c-primary);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--sp-3);
+}
+
+.hero__title-highlight {
+  background: linear-gradient(135deg, var(--c-secondary), var(--c-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__description {
+  font-size: var(--ts-lg);
+  color: var(--c-text);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--sp-4);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-3);
+}
+
+/* Hero compacto para páginas internas */
+.hero--compact {
+  padding-block: var(--sp-5);
+  text-align: center;
+}
+
+.hero--compact .hero__container {
+  grid-template-columns: 1fr;
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+}
+
+.hero--compact .hero__content {
+  text-align: center;
+}
+
+.hero--compact .hero__visual {
+  display: none;
+}

@@ -1,0 +1,87 @@
+/**
+ * 04-elements/_base.css
+ * Estilos base para elementos HTML sin clases
+ */
+
+body {
+  font-family: var(--ff-base);
+  font-size: var(--ts-base);
+  line-height: var(--lh-normal);
+  color: var(--c-text);
+  background-color: var(--c-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  color: var(--c-primary);
+  margin-bottom: var(--sp-3);
+}
+
+h1 {
+  font-size: var(--ts-hero);
+}
+
+h2 {
+  font-size: var(--ts-3xl);
+}
+
+h3 {
+  font-size: var(--ts-2xl);
+}
+
+h4 {
+  font-size: var(--ts-xl);
+}
+
+h5 {
+  font-size: var(--ts-lg);
+}
+
+h6 {
+  font-size: var(--ts-base);
+}
+
+p {
+  margin-bottom: var(--sp-3);
+}
+
+a {
+  color: var(--c-secondary);
+  transition: color var(--trans-fast);
+}
+
+a:hover {
+  color: var(--c-accent);
+}
+
+strong,
+b {
+  font-weight: var(--fw-semibold);
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: var(--c-primary-alpha);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--c-text-2);
+  margin: var(--sp-5) 0;
+  opacity: 0.3;
+}

@@ -1,0 +1,87 @@
+/**
+ * 06-components/_section.css
+ * Componente Section (encabezados de sección)
+ */
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--sp-5);
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    margin-bottom: var(--sp-6);
+  }
+}
+
+.section-header__overline {
+  font-size: var(--ts-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--c-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--sp-2);
+}
+
+.section-header__title {
+  font-size: var(--ts-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--c-primary);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--sp-3);
+}
+
+.section-header__description {
+  font-size: var(--ts-lg);
+  color: var(--c-text);
+  line-height: var(--lh-relaxed);
+}
+
+/* Sección con fondo */
+.section--bg {
+  background-color: var(--c-contrast);
+}
+
+.section--alt {
+  background-color: var(--c-bg);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--c-secondary), var(--c-accent));
+  color: var(--c-contrast);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-6);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    padding: var(--sp-7);
+  }
+}
+
+.cta-section__title {
+  font-size: var(--ts-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--c-contrast);
+  margin-bottom: var(--sp-3);
+}
+
+.cta-section__description {
+  font-size: var(--ts-lg);
+  color: var(--c-contrast);
+  opacity: 0.95;
+  margin-bottom: var(--sp-4);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.cta-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  justify-content: center;
+}

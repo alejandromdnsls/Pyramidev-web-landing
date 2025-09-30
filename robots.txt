@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pyramidev.com.mx/sitemap.xml
+
+# Directorios privados
+Disallow: /forms/
+
+# Archivos de configuración
+Disallow: *.json$
