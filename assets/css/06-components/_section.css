@@ -25,6 +25,15 @@
   margin-bottom: var(--sp-2);
 }
 
+.section-header__overwhite {
+  font-size: var(--ts-sm);
+  font-weight: var(--fw-semibold);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--sp-2);
+}
+
 .section-header__title {
   font-size: var(--ts-3xl);
   font-weight: var(--fw-bold);

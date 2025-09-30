@@ -4,7 +4,7 @@
  */
 
 :root {
-  /* Colores de marca */
+  /* Colores de marca - Light Mode */
   --c-primary: #001032;
   --c-secondary: #00B3FA;
   --c-accent: #00CAFF;
@@ -76,4 +76,30 @@
   --z-navbar: 1000;
   --z-modal: 2000;
   --z-dropdown: 1500;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  /* Colores de marca - Dark Mode */
+  --c-primary: #0A1929;
+  --c-secondary: #00B3FA;
+  --c-accent: #00CAFF;
+  --c-cta: #FF8C1A;
+  --c-success: #00E676;
+  --c-error: #FF6B6B;
+  --c-text: #E5E7EB;
+  --c-text-2: #9CA3AF;
+  --c-bg: #0F172A;
+  --c-contrast: #1E293B;
+
+  /* Estados de hover/active */
+  --c-secondary-hover: #33C4FF;
+  --c-cta-hover: #FFA033;
+  --c-primary-alpha: rgba(255, 255, 255, 0.05);
+
+  /* Sombras ajustadas para modo oscuro */
+  --shadow-1: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 8px 24px rgba(0, 179, 250, 0.25);
 }

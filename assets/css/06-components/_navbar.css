@@ -126,7 +126,45 @@
 }
 
 .navbar__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
   margin-left: var(--sp-3);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--c-text);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--trans-fast);
+}
+
+.theme-toggle:hover {
+  background-color: var(--c-primary-alpha);
+  color: var(--c-secondary);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Ocultar el ícono que no corresponde al tema actual */
+[data-theme="light"] .theme-toggle__moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__sun {
+  display: none;
 }
 
 /* Mobile menu */

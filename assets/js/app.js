@@ -8,6 +8,7 @@ import initNavbar from './components/navbar.js';
 import initAccordion from './components/accordion.js';
 import initModal from './components/modal.js';
 import initFilters from './components/filters.js';
+import initThemeToggle from './components/theme-toggle.js';
 import initHome from './pages/home.js';
 import initContact from './pages/contact.js';
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRouter();
 
   // Componentes globales
+  initThemeToggle(); // Inicializar primero para evitar flash
   initNavbar();
   initAccordion();
   initModal();

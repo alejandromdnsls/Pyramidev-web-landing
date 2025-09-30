@@ -28,6 +28,7 @@
 @import '06-components/_modal.css';
 @import '06-components/_section.css';
 @import '06-components/_footer.css';
+@import '06-components/_tech-stack.css';
 
 /* 07 - Utilities: utilidades y overrides */
 @import '07-utilities/_spacing.css';

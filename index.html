@@ -56,6 +56,14 @@
           <li><a href="contact.html" class="navbar__link">Contacto</a></li>
         </ul>
         <div class="navbar__cta">
+          <button class="theme-toggle" aria-label="Cambiar a modo oscuro">
+            <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"/>
+            </svg>
+            <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z"/>
+            </svg>
+          </button>
           <a href="contact.html" class="btn btn--cta">Cotiza tu proyecto</a>
         </div>
       </div>
@@ -64,7 +72,7 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" style="background: linear-gradient(135deg, rgba(0, 16, 50, 0.95), rgba(0, 179, 250, 0.1)), url('/assets/img/banners/Banner-1.png'); background-size: cover; background-position: center;">
     <div class="hero__container o-container">
       <div class="hero__content">
         <p class="hero__overline">Innovación Digital</p>
@@ -79,9 +87,6 @@
           <a href="contact.html" class="btn btn--cta btn--lg">Cotiza tu proyecto</a>
           <a href="portfolio.html" class="btn btn--outline btn--lg">Ver casos de éxito</a>
         </div>
-      </div>
-      <div class="hero__visual">
-        <img src="/assets/img/hero.webp" alt="Desarrollo de software innovador" class="hero__image" width="500" height="400" loading="eager">
       </div>
     </div>
   </section>
@@ -168,10 +173,10 @@
   </section>
 
   <!-- Proceso -->
-  <section class="o-section" id="proceso">
+  <section class="o-section" id="proceso"  style="background: linear-gradient(135deg, rgba(0, 179, 250, 0.1), rgba(0, 16, 50, 0.9)), url('/assets/img/banners/Banner-2.png'); background-size: cover; background-position: center;">
     <div class="o-container">
       <header class="section-header">
-        <p class="section-header__overline">Cómo trabajamos</p>
+        <p class="section-header__overwhite">Cómo trabajamos</p>
         <h2 class="section-header__title">Proceso probado en cada proyecto</h2>
         <p class="section-header__description">
           Metodología ágil con entregas continuas y feedback constante.
@@ -240,24 +245,103 @@
         <h2 class="section-header__title">Trabajamos con las mejores herramientas</h2>
       </header>
 
-      <div class="o-grid o-grid--4" style="gap: var(--sp-5); align-items: center; justify-items: center;">
-        <img src="/assets/img/tech/react.svg" alt="React" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/nodejs.svg" alt="Node.js" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/python.svg" alt="Python" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/aws.svg" alt="AWS" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/docker.svg" alt="Docker" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/kubernetes.svg" alt="Kubernetes" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/postgresql.svg" alt="PostgreSQL" width="80" height="80" loading="lazy">
-        <img src="/assets/img/tech/typescript.svg" alt="TypeScript" width="80" height="80" loading="lazy">
+      <div class="tech-stack">
+        <!-- Frontend -->
+        <div class="tech-stack__category">
+          <h3 class="tech-stack__category-title">Frontend</h3>
+          <div class="tech-stack__items">
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/react.svg" alt="React" width="64" height="64" loading="lazy">
+              <span>React</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/angular.svg" alt="Angular" width="64" height="64" loading="lazy">
+              <span>Angular</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/vuedotjs.svg" alt="Vue.js" width="64" height="64" loading="lazy">
+              <span>Vue.js</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/typescript.svg" alt="TypeScript" width="64" height="64" loading="lazy">
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-stack__category">
+          <h3 class="tech-stack__category-title">Backend</h3>
+          <div class="tech-stack__items">
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/nodejs.svg" alt="Node.js" width="64" height="64" loading="lazy">
+              <span>Node.js</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/python.svg" alt="Python" width="64" height="64" loading="lazy">
+              <span>Python</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/goland.svg" alt="Go" width="64" height="64" loading="lazy">
+              <span>Go</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/cplusplus.svg" alt="C++" width="64" height="64" loading="lazy">
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="tech-stack__category">
+          <h3 class="tech-stack__category-title">Cloud & DevOps</h3>
+          <div class="tech-stack__items">
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/aws.svg" alt="AWS" width="64" height="64" loading="lazy">
+              <span>AWS</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/docker.svg" alt="Docker" width="64" height="64" loading="lazy">
+              <span>Docker</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/kubernetes.svg" alt="Kubernetes" width="64" height="64" loading="lazy">
+              <span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bases de Datos -->
+        <div class="tech-stack__category">
+          <h3 class="tech-stack__category-title">Bases de Datos</h3>
+          <div class="tech-stack__items">
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/postgresql.svg" alt="PostgreSQL" width="64" height="64" loading="lazy">
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/mongodb.svg" alt="MongoDB" width="64" height="64" loading="lazy">
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/mysql.svg" alt="MySQL" width="64" height="64" loading="lazy">
+              <span>MySQL</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="/assets/img/tech/redis.svg" alt="Redis" width="64" height="64" loading="lazy">
+              <span>Redis</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="o-section" id="faq">
+  <section class="o-section" id="faq"  style="background: linear-gradient(135deg, rgba(0, 179, 250, 0.1), rgba(0, 16, 50, 0.9)), url('/assets/img/banners/Banner-2.png'); background-size: cover; background-position: center;">
     <div class="o-container o-container--narrow">
       <header class="section-header">
-        <p class="section-header__overline">Preguntas Frecuentes</p>
+        <p class="section-header__overwhite">Preguntas Frecuentes</p>
         <h2 class="section-header__title">¿Tienes dudas?</h2>
         <p class="section-header__description">
           Aquí resolvemos las preguntas más comunes sobre nuestros servicios.
