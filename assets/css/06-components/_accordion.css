@@ -55,7 +55,7 @@
   height: 24px;
   flex-shrink: 0;
   transition: transform var(--trans-fast);
-  color: var(--c-secondary);
+  color: var(--c-primary);
 }
 
 .accordion__header[aria-expanded="true"] .accordion__icon {

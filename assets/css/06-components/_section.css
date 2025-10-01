@@ -74,7 +74,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--c-secondary), var(--c-accent));
+  background: linear-gradient(135deg, var(--c-primary), var(--c-secondary));
   color: var(--c-contrast);
   border-radius: var(--radius-xl);
   padding: var(--sp-6);
@@ -108,4 +108,11 @@
   flex-wrap: wrap;
   gap: var(--sp-3);
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .cta-section__actions .btn {
+    width: auto;
+    min-width: 300px;
+  }
 }

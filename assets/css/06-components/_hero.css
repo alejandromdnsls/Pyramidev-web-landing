@@ -83,6 +83,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--sp-3);
+  justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .hero__actions {
+    justify-content: center;
+  }
 }
 
 .hero__visual {

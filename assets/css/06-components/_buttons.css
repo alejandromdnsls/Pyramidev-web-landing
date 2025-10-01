@@ -51,6 +51,7 @@
   background-color: var(--c-cta-hover);
   box-shadow: 0 8px 24px rgba(255, 122, 0, 0.25);
   transform: translateY(-2px);
+  color: var(--c-primary);
 }
 
 .btn--cta:active:not(:disabled) {
@@ -60,8 +61,8 @@
 /* Outline */
 .btn--outline {
   background-color: transparent;
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: var(--c-secondary);
+  border-color: var(--c-secondary);
 }
 
 .btn--outline:hover:not(:disabled) {
@@ -69,6 +70,18 @@
   color: var(--c-contrast);
   border-color: var(--c-secondary);
   transform: translateY(-2px);
+}
+
+/* Outline blanco para hero con fondo oscuro */
+.hero .btn--outline {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.hero .btn--outline:hover:not(:disabled) {
+  background-color: var(--c-secondary);
+  color: var(--c-contrast);
+  border-color: var(--c-secondary);
 }
 
 /* Ghost */

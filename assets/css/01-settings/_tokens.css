@@ -61,7 +61,7 @@
   --shadow-1: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.10);
-  --shadow-hover: 0 8px 24px rgba(0, 179, 250, 0.15);
+  --shadow-hover: 0 8px 24px rgba(0, 179, 250, 0.20);
 
   /* Transiciones */
   --trans-fast: 200ms ease;
