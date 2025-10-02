@@ -179,13 +179,14 @@
         <p class="section-header__overwhite">Cómo trabajamos</p>
         <h2 class="section-header__title">Nuestra fórmula para garantizar tu éxito</h2>
         <p class="section-header__description">
-          Metodología ágil con entregas continuas y feedback constante.
+          Fusionamos una metodología ágil de entregas continuas con arquitectura robusta y feedback constante para
+          impulsar tu proyecto.
         </p>
       </header>
 
       <div class="o-grid o-grid--4">
         <div class="card">
-          <div class="card__icon">
+          <div class="card__icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
@@ -193,48 +194,54 @@
           </div>
           <h3 class="card__title">1. Descubrimiento</h3>
           <p class="card__description">
-            Nos sumergimos en tu visión y tus metas. Juntos, definimos el roadmap estratégico para asegurar que el
-            proyecto tenga un impacto real desde el día uno.
+            Nos sumergimos con tus stakeholders para alinear la visión del negocio, los usuarios y el contexto técnico
+            (AS-IS / TO-BE).
+            Juntos, definimos objetivos y KPIs, priorizamos por valor, mapeamos riesgos y establecemos un roadmap claro,
+            con alcance incremental y criterios sólidos de “Ready” y “Done”.
           </p>
         </div>
 
         <div class="card">
-          <div class="card__icon">
+          <div class="card__icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
-                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                d="M3 5a2 2 0 012-2h9a1 1 0 010 2H5v14h14v-9a1 1 0 112 0v9a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm6 2h7a2 2 0 012 2v3h-2V9H9V7zm0 5h5a1 1 0 110 2H9a1 1 0 110-2zm0 4h8a1 1 0 110 2H9a1 1 0 110-2z" />
             </svg>
           </div>
-          <h3 class="card__title">2. Diseño</h3>
+          <h3 class="card__title">2. Arquitectura & Diseño</h3>
           <p class="card__description">
-            Creamos la arquitectura y la experiencia de usuario. Validamos cada detalle con prototipos interactivos
-            antes de escribir una sola línea de código.
+            Diseñamos una arquitectura escalable, segura y mantenible, aplicando patrones como Domain-Driven Design,
+            APIs versionadas e integración continua (CI/CD).
+            Validamos cada aspecto del UI/UX con prototipos interactivos antes de escribir una sola línea de código.
           </p>
         </div>
 
         <div class="card">
-          <div class="card__icon">
+          <div class="card__icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
             </svg>
           </div>
           <h3 class="card__title">3. Desarrollo</h3>
           <p class="card__description">
-            Construimos tu producto con código de la más alta calidad y metodología ágil. Tendrás visibilidad total
-            del progreso con entregas y revisiones semanales.
+            Desarrollamos bajo estrictos estándares de calidad: clean code, code reviews y pruebas automáticas
+            (unitarias, integración, e2e).
+            Iteramos en sprints cortos con demos semanales y desplegamos a través de un pipeline CI/CD para asegurar
+            entregas continuas y confiables.
           </p>
         </div>
 
         <div class="card">
-          <div class="card__icon">
+          <div class="card__icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
             </svg>
           </div>
-          <h3 class="card__title">4. Despliegue</h3>
+          <h3 class="card__title">4. Despliegue & Operación</h3>
           <p class="card__description">
-            Lanzamos tu producto al mercado y nos quedamos a tu lado. Ofrecemos soporte y monitoreo para asegurar un
-            rendimiento óptimo y una evolución constante.
+            Implementamos con IaC y estrategias blue/green o canary para despliegues sin impacto.
+            Reforzamos la seguridad y el rendimiento, y garantizamos una observabilidad de nivel productivo (logs,
+            métricas, trazas) con alertas proactivas, SLO/SLI y postmortems ágiles para mejora continua.
           </p>
         </div>
       </div>
@@ -265,8 +272,8 @@
               <span>Vue.js</span>
             </div>
             <div class="tech-stack__item">
-              <img src="./assets/img/tech/typescript.svg" alt="TypeScript" width="64" height="64" loading="lazy">
-              <span>TypeScript</span>
+              <img src="./assets/img/tech/svelte.svg" alt="Svelte" width="64" height="64" loading="lazy">
+              <span>Svelte</span>
             </div>
           </div>
         </div>
@@ -283,8 +290,8 @@
               <span>Python</span>
             </div>
             <div class="tech-stack__item">
-              <img src="./assets/img/tech/goland.svg" alt="Go" width="64" height="64" loading="lazy">
-              <span>Go</span>
+              <img src="./assets/img/tech/java.svg" alt="Java" width="64" height="64" loading="lazy">
+              <span>Java</span>
             </div>
             <div class="tech-stack__item">
               <img src="./assets/img/tech/cplusplus.svg" alt="C++" width="64" height="64" loading="lazy">
